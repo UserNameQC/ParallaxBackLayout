@@ -1,23 +1,24 @@
 apply plugin: 'com.android.library'
 
+//apply plugin: 'com.github.dcendents.android-maven'
+group='com.gitee.qjcjob'
+
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'com.github.anzewei'
 
-    publishedGroupId = 'com.github.anzewei'
     libraryName = 'parallaxbacklayout'
     artifact = 'parallaxbacklayout'
 
     libraryDescription = 'An Android library that help you to finish activity with swipe back gesture and you can get parallax scrolling effect'
 
-    siteUrl = 'https://github.com/anzewei/ParallaxBackLayout'
-    gitUrl = 'https://github.com/anzewei/ParallaxBackLayout.git'
+    siteUrl = 'https://gitee.com/qjcjob/parallax-back'
+    gitUrl = 'https://gitee.com/qjcjob/parallax-back.git'
 
     libraryVersion = '1.1.8'
 
-    developerId = 'anzewei'
-    developerName = 'An Zewei'
-    developerEmail = 'anzewei88@gmail.com'
+    developerId = 'qjcjob'
+    developerName = 'qiaojunchao'
+    developerEmail = 'qjcjob@126.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
