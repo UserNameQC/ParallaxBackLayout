@@ -1,4 +1,6 @@
 # ParallaxBackLayout
+# 原项目地址：https://github.com/anzewei/ParallaxBackLayout
+# 此版本是修改后的使用AndroidX版本
 [![Download](https://api.bintray.com/packages/anzewei/maven/com.github.anzewei/images/download.svg)](https://bintray.com/anzewei/maven/com.github.anzewei/_latestVersion)
 
 Finish an Activity with parallax scrolling effect.
