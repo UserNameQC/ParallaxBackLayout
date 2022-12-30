@@ -12,7 +12,8 @@
         <activity
             android:name=".NormalActivity"
             android:configChanges="orientation"
-            android:label="NormalActivity">
+            android:label="NormalActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
