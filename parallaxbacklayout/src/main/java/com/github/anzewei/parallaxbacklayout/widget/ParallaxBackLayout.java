@@ -31,6 +31,7 @@ import androidx.core.view.ViewCompat;
 import static com.github.anzewei.parallaxbacklayout.ViewDragHelper.EDGE_BOTTOM;
 import static com.github.anzewei.parallaxbacklayout.ViewDragHelper.EDGE_RIGHT;
 import static com.github.anzewei.parallaxbacklayout.ViewDragHelper.EDGE_TOP;
+import static com.github.anzewei.parallaxbacklayout.ViewDragHelper.INVALID_POINTER;
 
 /**
  * The type Parallax back layout.
@@ -43,7 +44,7 @@ public class ParallaxBackLayout extends FrameLayout {
     public @interface LayoutType {
     }
 
-    @IntDef({ViewDragHelper.EDGE_LEFT, EDGE_RIGHT, EDGE_TOP, EDGE_BOTTOM})
+    @IntDef({ViewDragHelper.EDGE_LEFT, EDGE_RIGHT, EDGE_TOP, EDGE_BOTTOM, INVALID_POINTER})
     @Retention(RetentionPolicy.SOURCE)
     public @interface Edge {
     }
@@ -121,10 +122,9 @@ public class ParallaxBackLayout extends FrameLayout {
      */
     private int mTrackingEdge;
     private int mFlingVelocity = 30;
-    @SuppressLint("WrongConstant")
-    private
+
     @Edge
-    int mEdgeFlag = -1;
+    private int mEdgeFlag = INVALID_POINTER;
     //endregion
 
     //region super method
@@ -271,6 +271,7 @@ public class ParallaxBackLayout extends FrameLayout {
     /**
      * draw shadow
      */
+    @SuppressLint("WrongConstant")
     private void drawShadow(Canvas canvas, View child) {
         if (mContentLeft == 0 && mContentTop == 0)
             return;
